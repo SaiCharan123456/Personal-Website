@@ -54,9 +54,27 @@ window.addEventListener("scroll", function() {
 function toggleDropdown() {
   var x = document.getElementById("nav");
   if (x.className === "topnav") {
-      x.className += " responsive";
+      x.className += "responsive";
   } else {
       x.className = "topnav";
   }
 }
+
+function email(){
+  var submit = document.querySelector('.submit-button');
+  var email = document.getElementById('email').value;
+  var firstName = document.getElementById('first-name').value;
+  var lastName = document.getElementById('last-name').value;
+  var message = document.getElementById('message').value;
+
+  // Debugging: Log form values to the console
+  console.log('Email:', email);
+  console.log('First Name:', firstName);
+  console.log('Last Name:', lastName);
+  console.log('Message:', message);
+
+  var mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saicharan999@gmail.com&su=Contact%20from%20${firstName}%20${lastName}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${email}`;
+
+}
+
 

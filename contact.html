@@ -11,6 +11,7 @@
     <script src='script.js'></script>
     <script src="https://kit.fontawesome.com/042314265b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
   <body>
     <header id="he">  
@@ -33,14 +34,14 @@
           <p><i class="fas fa-phone-alt"></i> 8106311299</p>
           <div style="display: flex; flex-direction: row; margin: right 10px; ;">
           <i class="fas fa-envelope" style="padding: 0; margin-right: 10px;padding-top: 16px;"></i>
-          <p style="margin-left:20px;"> boppana.saichara999@gmail.com</p>
+          <p style="margin-left:20px;"> boppana.saicharan999@gmail.com</p>
           </div>
           <div class="social-icons">
             <ul>
               <a href="https://github.com/SaiCharan123456" target="_blank" class="fa fa-github"></a>
               <a href="https://www.linkedin.com/in/sai-charan-boppana" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://wa.me/8106311299" target="_blank" class="fa fa-whatsapp"></a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saichara999@gmail.com" target="_blank" class="fa fa-envelope"></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saicharan999@gmail.com" target="_blank" class="fa fa-envelope"></a>
               <a href="https://www.instagram.com/saicharan_boppana" target="_blank" class="fa fa-instagram"></a>
             </ul>
           </div>
@@ -49,22 +50,22 @@
           <div style="display: flex;flex-direction: row; margin-bottom: 20px;">
             <div style="display: flex;flex-direction: column; margin-bottom: 10px;">
               <p style="margin-bottom: 10px;">First Name</p>
-              <input type="text" placeholder="" required style="margin-right: 20px;" >
+              <input type="text" id="first-name" placeholder="First Name" required style="margin-right: 20px;" >
             </div>
             <div style="display: flex;flex-direction: column; margin-bottom: 10px;">
               <p style="margin-bottom: 10px;">Last Name</p>
-              <input type="text" placeholder="" required>
+              <input type="text" id="last-name" placeholder="Last Name" required>
             </div>
           </div>
           <div style="display: flex;flex-direction: column; margin-bottom: 10px;">
             <p style="margin-bottom: 10px;">Email *</p>
-            <input type="email" placeholder="" required style="margin-bottom: 20px;">
+            <input type="email" id="email" placeholder="Email" required style="margin-bottom: 20px;">
           </div>
           <div style="display: flex;flex-direction: column; margin-bottom: 10px;">
             <p style="margin-bottom: 10px;">Message</p>
-            <textarea placeholder="" required style="margin-bottom: 20px; height: 150px;"></textarea>
+            <textarea id="message" placeholder="Message" required style="margin-bottom: 20px; height: 150px;"></textarea>
           </div>
-          <button type="submit" style="width: 70px;background-color: #0e49ae;color: #ffffff; display: flex; text-align: right;justify-content: center;;">Send</button>
+          <button type="submit" class="submit-button" style="width: 70px;background-color: #0e49ae;color: #ffffff; display: flex; text-align: right;justify-content: center;" onclick="email()">Send</button>
         </div>
       </div>
     </section>
@@ -75,7 +76,7 @@
           <div class="col-md-4" style="display: flex;text-align: left;flex-wrap: wrap;flex-direction: column;">
             <h4>Contact Me</h4>
             <p>8106311299</p>
-            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saichara999@gmail.com">boppana.saichara999@gmail.com</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saicharan999@gmail.com">boppana.saicharan999@gmail.com</a></p>
           </div>
           <div class="col-md-4" style="display: flex;text-align: left;flex-wrap: wrap;flex-direction: column;">
             <h4>Follow Me</h4>
@@ -83,7 +84,7 @@
               <a href="https://github.com/SaiCharan123456" target="_blank" class="fa fa-github"></a>
               <a href="https://www.linkedin.com/in/sai-charan-boppana" target="_blank" class="fa fa-linkedin"></a>
               <a href="https://wa.me/8106311299" target="_blank" class="fa fa-whatsapp"></a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saichara999@gmail.com" target="_blank" class="fa fa-envelope"></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boppana.saicharan999@gmail.com" target="_blank" class="fa fa-envelope"></a>
               <a href="https://www.instagram.com/saicharan_boppana" target="_blank" class="fa fa-instagram"></a>
             </ul>
           </div>
